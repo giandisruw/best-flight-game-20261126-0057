@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Skyline Ring Rush — Make the Best Flight Game</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<canvas id="game" width="1280" height="720"></canvas>
+
+<div id="menu" class="overlay">
+  <div class="panel">
+    <h1>SKYLINE RING RUSH</h1>
+    <p class="tag">An original offline flight game &mdash; take off from the valley runway,
+    thread all eight glowing rings over the lake and the mountains, and bring
+    her home in one piece.</p>
+    <div class="controls">
+      <div><b>W / &uarr;</b> climb &nbsp; <b>S / &darr;</b> descend</div>
+      <div><b>A / D</b> or <b>&larr; / &rarr;</b> bank &amp; turn</div>
+      <div><b>Mouse</b> steer (move to bank &amp; pitch) &nbsp; <b>Wheel</b> throttle</div>
+      <div><b>Shift / Ctrl</b> throttle up / down &nbsp; <b>Space</b> airbrake</div>
+      <div><b>C</b> cockpit / chase camera &nbsp; <b>P</b> pause &nbsp; <b>R</b> restart</div>
+    </div>
+    <button id="startBtn">TAKE OFF</button>
+    <p class="fine">100% offline &mdash; no network, no assets, no accounts. Runs from static files.</p>
+  </div>
+</div>
+
+<div id="results" class="overlay hidden">
+  <div class="panel">
+    <h1 id="resultTitle">COURSE COMPLETE</h1>
+    <p id="resultLine" class="tag"></p>
+    <table id="resultStats"></table>
+    <button id="againBtn">FLY AGAIN (R)</button>
+  </div>
+</div>
+
+<div id="selftest"></div>
+<script src="game.js"></script>
+</body>
+</html>

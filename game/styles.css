@@ -1,0 +1,24 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; height: 100%; overflow: hidden; background: #0b1220;
+  font-family: "Segoe UI", Verdana, sans-serif; }
+#game { display: block; width: 100vw; height: 100vh; cursor: crosshair; }
+.overlay { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center;
+  background: rgba(5, 10, 22, 0.55); z-index: 10; }
+.overlay.hidden { display: none; }
+.panel { background: rgba(10, 18, 34, 0.92); border: 1px solid #3a6ea5; border-radius: 14px;
+  padding: 28px 36px; max-width: 560px; text-align: center; color: #e8f1ff;
+  box-shadow: 0 0 40px rgba(58, 140, 255, 0.35); }
+.panel h1 { margin: 0 0 10px; font-size: 34px; letter-spacing: 3px; color: #ffd75e;
+  text-shadow: 0 0 18px rgba(255, 215, 94, 0.55); }
+.panel .tag { font-size: 15px; line-height: 1.5; color: #c9d9ef; margin: 0 0 16px; }
+.controls { text-align: left; font-size: 14px; line-height: 1.9; color: #bcd0ea;
+  background: rgba(255,255,255,0.05); border-radius: 8px; padding: 10px 16px; margin-bottom: 18px; }
+.controls b { color: #ffd75e; }
+button { background: #ffb703; color: #1a1200; border: none; border-radius: 8px;
+  font-size: 18px; font-weight: 700; letter-spacing: 2px; padding: 12px 34px; cursor: pointer; }
+button:hover { background: #ffd75e; }
+.fine { font-size: 12px; color: #7e93b5; margin: 14px 0 0; }
+#resultStats { margin: 0 auto 18px; border-collapse: collapse; font-size: 15px; color: #c9d9ef; }
+#resultStats td { padding: 4px 14px; text-align: left; }
+#resultStats td:last-child { text-align: right; color: #ffd75e; font-weight: 700; }
+#selftest { display: none; }
